@@ -219,6 +219,7 @@ If everything goes well, you should see `hello world` printed from Netcat.
 We've only dipped our toes into Tokio and its asynchronous model. The next page in
 the guide will start digging a bit deeper into Futures and the Tokio runtime model.
 
+[`AsyncWriteExt::write_all`]: https://docs.rs/tokio/*/tokio/io/trait.AsyncWriteExt.html#method.write_all
 [`Future`]: https://docs.rs/futures-preview/*/futures-preview/future/trait.Future.html
 [`Futures`]: /docs/getting-started/futures/
 [rt]: https://docs.rs/tokio/*/tokio/runtime/index.html
