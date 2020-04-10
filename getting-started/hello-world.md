@@ -189,7 +189,7 @@ In this case we create the default runtime, and spawn the task onto it, blocking
 have completed and all resources (like files and sockets) have been dropped.
 
 So far, we only have a single task running on the executor, so the `client` task
-is the only one blocking `run` from returning. Once `run` has returned we can be sure
+is the only one blocking `rt.block_on()` from returning. Once `rt.block_on()` has returned we can be sure
 that our Future has been run to completion.
 
 You can find the full example [here][full-code].
