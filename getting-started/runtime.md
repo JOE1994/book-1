@@ -19,7 +19,7 @@ value is returned. There are many different ways to do this and thus many types 
 runtime configurations. For example, the [`CurrentThread`] runtime configuration
 will block the current thread and loop through all spawned Futures, calling poll on
 them. The thread pool configuration schedules Futures across a thread pool. This
-is also the default configuration used by the Tokio [runtime][rt].
+is also the default configuration used by the Tokio [runtime].
 
 It's important to remember that all futures **must** be spawned on the runtime or no
 work will be performed.
@@ -79,6 +79,6 @@ In the next section, we'll take a look at a more involved example than our hello
 world example that takes everything we've learned so far into account.
 
 [`CurrentThread`]: https://docs.rs/tokio/*/tokio/runtime/current_thread
-[rt]: {{< api-url "tokio" >}}/runtime/index.html
+[runtime]: https://docs.rs/tokio/*/tokio/runtime/index.html
 [Go’s goroutine]: https://www.golang-book.com/books/intro/10
 [Erlang’s process]: http://erlang.org/doc/reference_manual/processes.html
