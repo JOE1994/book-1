@@ -133,7 +133,7 @@ We'll be exploring more combinators later in this guide.
 
 # Poll based Futures
 
-As hinted at earlier, Rust futures are poll based. This means that instead of a
+As hinted earlier, Rust futures are poll based. This means that instead of a
 `Future` being responsible for pushing the data somewhere once it is complete, it
 relies on being asked whether it is complete or not.
 
